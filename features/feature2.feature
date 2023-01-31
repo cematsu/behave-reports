@@ -6,4 +6,4 @@ Background:
 
 Scenario: generate a test report
   Given I generate another test report
-  When I wait 1 sec
+  When I wait 0 sec
