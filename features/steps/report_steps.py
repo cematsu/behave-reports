@@ -16,3 +16,8 @@ def step_impl(context):
 @when('I wait {seconds} sec')
 def step_impl(context, seconds):
     sleep(int(seconds))
+
+
+@then('I fail the test')
+def step_impl(context):
+    assert True is False, "ERROR: Failing report"

@@ -7,3 +7,4 @@ Background:
 Scenario: generate a test report
   Given I generate another test report
   When I wait 1 sec
+  Then I fail the test
