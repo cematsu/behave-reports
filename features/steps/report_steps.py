@@ -1,3 +1,4 @@
+from random import random, randrange
 from time import sleep
 
 from behave import given, when, then
@@ -20,4 +21,4 @@ def step_impl(context, seconds):
 
 @then('I fail the test')
 def step_impl(context):
-    assert True is False, "ERROR: Failing report"
+    assert int(randrange(0, 100)) % 2 == 0, "ERROR"
